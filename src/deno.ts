@@ -64,7 +64,7 @@ export async function info(
     proc = Deno.run({
       cmd,
       stdout: "piped",
-      cwd: tempDir,
+      //cwd: tempDir,
     });
     const raw = await proc.output();
     const status = await proc.status();
